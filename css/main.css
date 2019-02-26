@@ -1,0 +1,105 @@
+html, body {
+	height: 100% !important;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#blog-info {
+	position: relative;
+	height: 100%;
+	background: linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),url("../img/img_background.jpg");
+	color: white;
+	background-attachment: fixed;
+}
+
+#welcome {
+	position: relative;
+	height: 100%;
+	color: white;
+	background: linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),url("../img/img_welcome.jpg");
+}
+
+.content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 1000px;
+	text-align: center;
+}
+
+section .content h3 {
+	text-transform: uppercase;
+	color: #777;
+}
+
+#blog-info h1, #welcome h1 {
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	text-transform: uppercase;
+}
+
+.right-down {
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+	text-transform: uppercase;
+}
+
+.right-down a {
+	color: white;
+}
+
+section {
+	position: relative;
+	height: 80%;
+}
+
+section .content {
+	transform: translate(-50%, -30%) rotateY(90deg);
+	opacity: 0;
+	transition: all 1s ease-out;
+}
+
+section .content.fade-in {
+	opacity: 1;
+	transform: translate(-50%, -50%);
+}
+
+.comments {
+	max-height: 30%;
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    background-color: white;
+    text-transform: uppercase;
+	font-weight: 700;
+	color: #AAA;
+    border: 2px solid #AAA;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    transition: all .2s ease-out; 
+}
+
+input[type=submit]:hover {
+	border-color: #61C4D6;
+	color: #61C4D6;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}

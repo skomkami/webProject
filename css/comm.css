@@ -1,0 +1,20 @@
+﻿#communicator {
+	position: fixed;
+	background-color: white;
+	bottom: 0;
+	right: 0;
+	border: 1px solid rgba(195, 195, 216, 0.5);
+	width: 300px;
+	height: 400px;
+	text-align: center;
+}
+
+#messages_field {
+	width: 250px;
+	height: 200px;
+}
+
+#message_field {
+	width: 250px;
+	height: 50px;
+}
